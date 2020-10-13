@@ -1,0 +1,201 @@
+/* flex-box */
+
+
+/* font styles and icons */
+
+
+/* search icon */
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+#main-body {
+    display: flex;
+    flex-direction: row;
+}
+
+#main-body .background-div {
+    align-self: flex-start;
+    background-image: url('twitterbird.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: left;
+    background-color: #71C9F8;
+    background-size: 80% 120%;
+    width: 50%;
+    height: 92vh;
+}
+
+
+/* flex direction row means things flow from left to right */
+
+
+/* flex direction column means things flow from top to bottom */
+
+#main-body .aside-div {
+    align-self: flex-start;
+    height: 92vh;
+}
+
+#main-body .background-div .box {
+    /* display: flex;
+    flex-direction: column; */
+    /* justify-content: center; */
+    align-items: center;
+    /* height: 100vh; */
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#main-body .background-div .box .search {
+    margin-top: 222px;
+    margin-left: 155px;
+}
+
+#main-body .background-div .box .people {
+    margin-left: 155px;
+    margin-top: 45px;
+}
+
+#main-body .background-div .box .conversation {
+    margin-top: 45px;
+    margin-left: 155px;
+}
+
+#main-body .background-div .box i {
+    padding-right: 10px;
+    font-size: 17;
+    font-weight: normal;
+}
+
+
+/* form styling */
+
+#main-body .aside-div form {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+#main-body .aside-div form input {
+    background-color: #F5F8FA;
+    height: 55px;
+    width: 215px;
+    margin-left: 15px;
+    border: none;
+    border-bottom: 2px solid gray;
+    padding-bottom: 35px;
+    padding-left: 15px;
+    font-size: 15px;
+    color: gray;
+}
+
+#main-body .aside-div form input #pswd {
+    margin-left: 70px;
+}
+
+
+/* button styling */
+
+#main-body .aside-div #login-btn {
+    background-color: white;
+    border-radius: 40px;
+    border: 1.5px solid #1DA1F2;
+    width: 75px;
+    height: 35px;
+    margin-top: 10px;
+    margin-left: 15px;
+    font-size: 16px;
+    color: #1DA1F2;
+    font-weight: bold;
+}
+
+
+/* forgot password styling */
+
+#main-body .aside-div #forgot-password a {
+    display: block;
+    font-size: 13px;
+    text-decoration: none;
+    color: #1DA1F2;
+    margin-left: 290px;
+    margin-top: 10px;
+}
+
+
+/* signup and login flexbox */
+
+#main-body .aside-div #login {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+#main-body .aside-div #login img {
+    display: block;
+    height: 30px;
+    width: 40px;
+    margin-top: 50px;
+    margin-left: 120px;
+    margin-bottom: 30px;
+}
+
+#main-body .aside-div #login h1 {
+    margin-left: 120px;
+    font-size: 30px;
+}
+
+#main-body .aside-div #login h4 {
+    margin-left: 120px;
+    margin-top: 60px;
+    margin-bottom: 15px;
+}
+
+#main-body .aside-div #login button {
+    margin-left: 120px;
+    width: 400px;
+    height: 40px;
+    border-radius: 40px;
+    margin-bottom: 20px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#main-body .aside-div #login #sign-up {
+    color: white;
+    background-color: #1DA1F2;
+}
+
+#main-body .aside-div #login #log-in {
+    color: #1DA1F2;
+    background-color: white;
+    border: 1px solid #1DA1F2;
+}
+
+footer a {
+    display: inline-block;
+    color: gray;
+    margin-top: 20px;
+    padding-right: 10px;
+    font-size: 14px;
+}
+
+footer p {
+    margin-left: 40px;
+}
